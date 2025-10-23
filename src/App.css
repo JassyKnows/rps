@@ -1,0 +1,73 @@
+/* Base layout */
+body {
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+div {
+  background: white;
+  padding: 40px 60px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+/* Buttons styling */
+button {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  margin: 10px;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.3s ease;
+}
+
+button:hover {
+  background: #4338ca;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* Text styling */
+p {
+  font-size: 18px;
+  color: #333;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+p:first-of-type {
+  font-weight: 600;
+}
+
+p:last-of-type {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Result text colors */
+p:contains('won') {
+  color: #16a34a;
+}
+
+p:contains('lost') {
+  color: #dc2626;
+}
+
+p:contains('tie') {
+  color: #f59e0b;
+}
